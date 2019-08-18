@@ -1,0 +1,47 @@
+group 'com.caihao.dubboprovider02'
+version '1.0.0'
+
+apply plugin: 'java'
+//apply plugin: 'war'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+// 指定上传的路径
+def localMavenRepo = 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
+
+// 上传Task，Gradle会生成并上传pom.xml文件。
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: localMavenRepo)
+
+            //构造项目的Pom文件
+            pom.project {
+                name = project.name
+                packaging = 'jar'
+                description = 'description'
+            }
+        }
+    }
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // 引入api
+    compile project(':api')
+    // 引入springboot-web
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.3.RELEASE'
+    // dubbo
+    // https://mvnrepository.com/artifact/com.alibaba/dubbo
+    compile group: 'org.apache.dubbo', name: 'dubbo', version: '2.7.3'
+    compile group: 'org.apache.dubbo', name: 'dubbo-dependencies-zookeeper',version: '2.7.3'
+}

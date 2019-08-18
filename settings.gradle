@@ -1,0 +1,5 @@
+rootProject.name = 'provider'
+include 'api'
+include 'model'
+include 'server'
+

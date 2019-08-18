@@ -1,0 +1,36 @@
+group 'com.caihao.dubboprovider02'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+////所有子项目共享配置
+//subprojects {
+//    apply plugin: 'maven'
+//    // 获取本地仓库路径
+////    def localRepositoryPath = 'file://' + new File(System.getProperty('user.home'), '.m2/repository').absolutePath
+//    def localRepositoryPath = 'file://C:\\Users\\caihao\\.m2\\repository'
+//    //打包至本地仓库配置
+//    uploadArchives {
+//        repositories {
+//            //mavenDeployer 需要依赖 apply plugin: 'maven'
+//            mavenDeployer   {
+//                repository(url: localRepositoryPath)
+//                pom.project {
+//                    name = project.name        // 当前项目名称
+//                    version = project.version   //当前项目版本  0.0.1
+//                    groupId = project.group     //  当前项目组  com.xxx
+//                }
+//            }
+//        }
+//    }
+//}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

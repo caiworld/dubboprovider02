@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api.iml" filepath="$PROJECT_DIR$/.idea/modules/api.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_main.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/api/api_test.iml" group="api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/model.iml" filepath="$PROJECT_DIR$/.idea/modules/model.iml" group="model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/model/model_main.iml" filepath="$PROJECT_DIR$/.idea/modules/model/model_main.iml" group="model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/model/model_test.iml" filepath="$PROJECT_DIR$/.idea/modules/model/model_test.iml" group="model" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/provider.iml" filepath="$PROJECT_DIR$/.idea/modules/provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/provider_main.iml" filepath="$PROJECT_DIR$/.idea/modules/provider_main.iml" group="provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/provider_test.iml" filepath="$PROJECT_DIR$/.idea/modules/provider_test.iml" group="provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server.iml" filepath="$PROJECT_DIR$/.idea/modules/server.iml" group="server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/server_main.iml" group="server" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/server/server_test.iml" group="server" />
+    </modules>
+  </component>
+</project>
